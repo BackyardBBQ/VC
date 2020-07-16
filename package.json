@@ -1,0 +1,31 @@
+{
+    "name": "Venture_Creator",
+    "version": "1.0.0",
+    "description": "Adventure creator",
+    "main": "index.js",
+    "scripts": {
+        "start": "electron .",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^8.4.0"
+    },
+    "dependencies": {
+        "npm": "^6.14.6",
+        "shelljs": "^0.8.4",
+        "xml-js": "^1.6.11",
+        "xml2json": "^0.12.0"
+    },
+    "build": {
+        "appId": "VentureCreator",
+        "productName": "Venture Creator",
+        "copyright": "Copyright &copy2020, Backyard BBQ",
+        "mac": {
+            "category": "development"
+        }
+    }
+}
