@@ -1,0 +1,333 @@
+html {
+    background-color: darkgray;
+    -webkit-font-smoothing: antialiased;
+}
+
+#body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    float: left;
+
+}
+
+squareOUT {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: -15px;
+    top: -15px;
+    float: left;
+}
+
+#header {
+    height: 125px;
+    max-width: 800px;
+    margin-top: 20px;
+    vertical-align: top;
+    float: left;
+
+}
+
+#footer {
+    width: 100%;
+    height: 100px;
+    color: white;
+    vertical-align: middle;
+    margin-top: 10px;
+    float: left;
+}
+
+/* header classes */
+#stats {
+    height: 50px;
+    width: 100%;
+    vertical-align: middle;
+    text-align: left;
+    padding: 5px;
+    padding-top: 15px;
+    float: left;
+}
+
+#stats a:any-link {
+    text-decoration: none;
+}
+
+#navigation {
+    height: 75px;
+    width: 100px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 5px;
+    float: left;
+}
+
+#navigation a:any-link {
+    text-decoration: none;
+    color: aquamarine;
+    /* change back to white */
+
+}
+
+#siteTitle {
+    height: 35px;
+    width: auto;
+    vertical-align: text-top;
+    text-align: left;
+    padding: 5px;
+    padding-left: 15px;
+    float: left;
+    font-size: 30px;
+    font-family: fantasy;
+    font-weight: bolder;
+    color: white;
+    -webkit-text-stroke: .02px grey;
+
+}
+
+/* stats classes */
+#money {
+    width: auto;
+    height: 20px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    color: white;
+    margin-right: 5px;
+    float: left;
+}
+
+#money:hover {
+    width: auto;
+    height: 20px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    background-color: lightblue;
+    color: black;
+    margin-right: 5px;
+    float: left;
+}
+
+#inv {
+    width: auto;
+    height: 20px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    color: white;
+    margin-right: 5px;
+    float: left;
+}
+
+#theTime {
+    width: 150px;
+    height: 20px;
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    top: 40px;
+    left: 600px;
+    background-color: cadetblue;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    display: inline-block;
+    float: right;
+}
+
+#inv:hover {
+    width: auto;
+    height: 20px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    background-color: lightcoral;
+    color: white;
+    margin-right: 5px;
+    float: left;
+}
+
+#mood {
+    width: auto;
+    height: 20px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    color: white;
+    margin-right: 5px;
+    float: left;
+}
+
+#mood:hover {
+    width: auto;
+    height: 20px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    background-color: darkseagreen;
+    color: white;
+    margin-right: 5px;
+    float: left;
+}
+
+#strngth {
+    width: auto;
+    height: 20px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    color: white;
+    margin-right: 5px;
+    float: left;
+}
+
+#strngth:hover {
+    width: auto;
+    height: 20px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    background-color: blueviolet;
+    color: white;
+    margin-right: 5px;
+    float: left;
+}
+
+#dxty {
+    width: auto;
+    height: 20px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    color: white;
+    margin-right: 5px;
+    float: left;
+}
+
+#dxty:hover {
+    width: auto;
+    height: 20px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    background-color: chocolate;
+    color: white;
+    margin-right: 5px;
+    float: left;
+}
+
+#combat {
+    width: auto;
+    height: 20px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    color: white;
+    margin-right: 5px;
+    float: left;
+}
+
+#combat:hover {
+    width: auto;
+    height: 20px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    background-color: darkseagreen;
+    color: white;
+    margin-right: 5px;
+    float: left;
+}
+
+#charisma {
+    width: auto;
+    height: 20px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    color: white;
+    margin-right: 5px;
+    float: left;
+}
+
+#charisma:hover {
+    width: auto;
+    height: 20px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    background-color: orangered;
+    color: white;
+    margin-right: 5px;
+    float: left;
+}
+
+#rep {
+    width: 9%;
+    height: 35px;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    background-color: darkolivegreen;
+    color: white;
+    margin-right: 5px;
+    float: left;
+}
+
+#rep:hover {
+    width: 9%;
+    height: 35px;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    background-color: skyblue;
+    color: black;
+    margin-right: 5px;
+    float: left;
+}
+
+#staff {
+    width: 9%;
+    height: 35px;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    background-color: cadetblue;
+    color: white;
+    margin-right: 5px;
+    float: left;
+}
+
+#staff:hover {
+    width: 9%;
+    height: 35px;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    background-color: powderblue;
+    color: black;
+    margin-right: 5px;
+    float: left;
+}

@@ -1,0 +1,372 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sam, Bam, Thank you M'am</title>
+    <meta name="description" content="Murder, mystery and intrigue">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        #txtInput {
+            width: 600px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            height: 35px;
+            font-size: 16px;
+            background-color: darkgray;
+            color: white;
+            text-align: left;
+            padding-left: 3px;
+            vertical-align: middle;
+            border-style: solid;
+            border-width: thin;
+            border-color: white;
+            border-radius: 5px;
+        }
+
+        #btn_enter {
+            width: 150px;
+            height: 35px;
+            margin-left: 5px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            background-color: cornflowerblue;
+            color: white;
+            text-align: center;
+            vertical-align: middle;
+            border-style: solid;
+            border-width: thin;
+            border-radius: 5px;
+        }
+
+        #btn_enter:hover {
+            width: 150px;
+            height: 35px;
+            margin-left: 5px;
+            font-size: 14px;
+            background-color: cadetblue;
+            color: white;
+            text-align: center;
+            vertical-align: middle;
+            border-style: solid;
+            border-width: thin;
+            border-radius: 5px;
+        }
+
+        .pic_bx {
+            width: 800px;
+            border: 1px;
+            border-style: solid;
+            border-color: aliceblue;
+            margin: 3px;
+            height: 250px;
+            position: relative;
+            display: block;
+            background-repeat: no-repeat;
+            background-position: center;
+            float: left;
+        }
+
+        /* pic_bx is the main room image */
+        #txtDisplay {
+            width: 98.5%;
+            padding-top: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            font-size: 16px;
+            background-color: darkgray;
+            text-align: left;
+            color: black;
+            border: 1px;
+            border-style: solid;
+            border-color: aliceblue;
+            height: 250px;
+            position: relative;
+            float: left;
+            scroll-behavior: auto;
+            overflow: scroll;
+
+
+        }
+
+        #roomTitle {
+            width: 98.5%;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 5px;
+            background-color: darkgreen;
+            margin-bottom: 2px;
+            border: 1px;
+            border-style: solid;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: underline;
+            position: relative;
+            float: left;
+        }
+
+        #exitsDisplay {
+            width: 98.5%;
+            padding-top: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-top: 2px;
+            font-size: 16px;
+            background-color: darkslategray;
+            text-align: left;
+            color: white;
+            border: 1px;
+            border-style: solid;
+            border-color: aliceblue;
+            height: 50px;
+            float: left;
+            scroll-behavior: smooth;
+
+        }
+
+        #inputArea {
+            width: 98.5%;
+            height: 75px;
+            border: 1px;
+            border-style: solid;
+            border-color: aliceblue;
+            margin-top: 3px;
+            padding-top: 25px;
+            padding-left: 5px;
+            padding-right: 5px;
+            font-size: 16px;
+            color: white;
+            text-align: left;
+            float: left;
+        }
+
+        #roomPic {
+            width: 780px;
+            height: 240px;
+            padding-top: 5px;
+            vertical-align: middle;
+            text-align: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        #specialPic {
+            width: 300px;
+            height: 300px;
+            padding-top: 5px;
+            vertical-align: middle;
+            text-align: center;
+            position: relative;
+        }
+
+        #displayStats {
+            width: 800px;
+            height: 20px;
+            background-color: darkblue;
+            color: white;
+            text-align: left;
+            padding-left: 10px;
+            float: left;
+        }
+
+        #smallPic1 {
+            background-color: transparent;
+            width: 100px;
+            height: 100px;
+            border-width: 2px;
+            border-color: white;
+            border-style: solid;
+            box-shadow: 5px 5px #999999;
+            position: relative;
+            left: 10px;
+            top: 20px;
+            background-repeat: no-repeat;
+            background-position: center;
+            visibility: hidden;
+        }
+
+        #smallPic2 {
+            background-color: transparent;
+            width: 100px;
+            height: 100px;
+            border-width: 2px;
+            border-color: white;
+            border-style: solid;
+            box-shadow: 5px 5px #999999;
+            position: relative;
+            background-repeat: no-repeat;
+            background-position: center;
+            left: 125px;
+            top: 20px;
+            visibility: hidden;
+        }
+
+        .graphOff {
+            background-color: burlywood;
+            background-image: url("art/screen_off.png");
+            width: 80px;
+            height: 50px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-style: solid;
+            border-width: thin;
+            border-color: floralwhite;
+        }
+
+        .graphOff:hover {
+            background-color: darkcyan;
+        }
+
+        .saveBtn {
+            background-color: burlywood;
+            width: 80px;
+            height: 50px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-style: solid;
+            border-width: thin;
+            border-color: floralwhite;
+        }
+
+        .saveBtn:hover {
+            background-color: darkcyan;
+        }
+
+    </style>
+</head>
+<script type="application/javascript">
+
+</script>
+
+<body>
+    <table id="tbl" style="background-color: #000000; width: auto; min-height: 300px; text-align: center; color: #ffffff; vertical-align: text-top;">
+        <tr style="width: 820px; float: left;">
+            <td style="vertical-align: top">
+                <div id="header">
+                    <div id="theTime"></div>
+                    <div id="siteTitle">Boilerplate</div>
+                    <div id="displayStats">
+                        <div id="money">
+                            £0.00
+                        </div>
+                        <div style="width: 5px; float: left;"></div>
+                        <div id="inv">
+                            Carrying: 0/10
+                        </div>
+                        <div style="width: 5px; float: left;"></div>
+                        <div id="mood">
+                            Mood: normal
+                        </div>
+                        <div style="width: 5px; float: left;"></div>
+                        <div id="strngth">
+                            Strength:1/10
+                        </div>
+
+                        <div style="width: 5px; float: left;"></div>
+                        <div id="dxty">
+                            Dexterity:1/10
+                        </div>
+                        <div style="width: 5px; float: left;"></div>
+                        <div id="combat">
+                            Combat:1/10
+                        </div>
+                        <div style="width: 5px; float: left;"></div>
+                        <div id="charisma">
+                            Charisma:1/10
+                        </div>
+                    </div>
+
+                    <!-- want a low hanging tab with time if time relevant -->
+
+
+
+                </div>
+
+                <div id="d_main" style="width: 810px; vertical-align: top; float: left">
+
+
+
+
+                    <div id="imageRow" class="pic_bx">
+                        <div id="smallPic1" style="visibility: collapse; display: none;"></div>
+                        <div id="smallPic2" style="visibility: collapse; display: none;"></div>
+                    </div>
+                    <div id="roomTitle"></div>
+                    <div id="txtDisplay"> Loading data....
+                    </div>
+                    <div id="exitsDisplay"></div>
+
+                    <div id="inputArea">
+                        <input id="txtInput" />
+                        <button id="btn_enter" type="submit" onclick="afterEnter()">Submit instruction</button>
+                    </div>
+
+
+
+                </div>
+                <div id="footer">
+                    <button id="btn_graphics" type="button" class="graphOff" title="Switch graphics off" onclick="graphSwitch()"></button>
+                    <div style="width:15px; float: left"></div>
+                    <button id="btn_save" type="button" class="saveBtn" title="Save game" onclick="systComm('save')" style="background-image: url('art/save_sm.png')"></button>
+                    <div style="width:15px; float: left"></div>
+                    <button id="btn_load" type="button" class="saveBtn" title="Load saved game" onclick="systComm('load')" style="background-image: url('art/load_sm.png')"></button>
+                    <div style="width:15px; float: left"></div>
+                    <button id="btn_quit" type="button" class="saveBtn" title="Quit game" onclick="systComm('quit')" style="background-image: url('art/quit.png')"></button>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="scr/varDefinitions.js"></script>
+    <script type="text/javascript" src="scr/authorVariables.js"></script>
+    <script type="text/javascript" src="scr/variables.js"></script>
+    <script type="text/javascript" src="scr/v2-funct.js"></script>
+    <script type="text/javascript" src="scr/doXML.js"></script>
+    <script type="text/javascript" src="scr/general.js"></script>
+    <script type="text/javascript" src="scr/commands.js"></script>
+    <script type="text/javascript" src="scr/events.js"></script>
+    <script type="text/javascript" src="scr/requirements.js"></script>
+    <script type="text/javascript" src="scr/spells.js"></script>
+
+    <script>
+        /*firstLoad();*/ /* this goes first so we can call variables in the header without fear of them being in */
+        /*includeHTML();*/
+        /*includeFooter();*/
+        // make enter key act as if button clicked NB enter key is key code 13
+
+        var input = document.getElementById("txtInput");
+        input.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode == 13) {
+                document.getElementById('btn_enter').click();
+            }
+        });
+        //Global variables
+        //stored in general.js
+        /* set variables for typewriter. These can be changed in a function now theyn have been set.
+         */
+
+        var type_i = 0;
+        var type_speed = 150;
+        var varRID = 0;
+
+
+
+
+        // set the variables that will be used for the rooms
+        // this has tyo be before the calling of the function, //within which is the call to set up the first room
+
+
+
+        // max ten items in inventory but bag can increase this if carried!
+
+        startUp();
+        // put the objectsArray items into new objects
+        // use the objects (eg torch) in the commands.js so when
+        // the input is exam torch we can display torch.description
+
+    </script>
+</body>
+
+</html>

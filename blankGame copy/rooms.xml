@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<rooms>
+<room>
+<id>1</id>
+<name>A default room</name>
+<description>When you first enter this room, a long description is a really good idea. You can also put some events like: a roof tile falls from the roof. You are safe in the knowledge that the next time the player looks around this room they will get the short description.....</description>
+<isLit>y</isLit>
+<canBeDark>n</canBeDark>
+<darkDescription>Only put something here if can be dark is set to on.</darkDescription>
+<exits>Text describing the routes out of here.</exits>
+<Nto>0</Nto>
+<Sto>0</Sto>
+<Eto>0</Eto>
+<Wto>0</Wto>
+<Upto>0</Upto>
+<Dto>0</Dto>
+<Into>0</Into>
+<Outto>0</Outto>
+<img>xx</img>
+<isRevealed>y</isRevealed>
+<blocking>xx</blocking>
+<shortDesc>Some description of this room which will be valid every time the player enters</shortDesc>
+<beenBefore>n</beenBefore>
+<roomType>outdoors</roomType>
+<helpHint>Something that might help the player should they be stuck in this room, like; try leaving this room</helpHint>
+</room>
+
+</rooms>

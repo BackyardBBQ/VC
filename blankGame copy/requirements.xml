@@ -1,0 +1,46 @@
+<requirements>
+    <requirement>
+        <id>0</id><!-- req 0 is the final step -->
+        <isComplete>n</isComplete>
+        <allowsAccessType>room</allowsAccessType>
+        <!--room, object, person, conversation -->
+        <allowsAccessToID>0</allowsAccessToID><!-- id of object, room etc -->
+        <reqObj1>9999</reqObj1>
+        <reqObj2>9999</reqObj2>
+        <reqObj3>9999</reqObj3>
+        <reqObj4>9999</reqObj4>
+        <reqObj5>9999</reqObj5>
+        <reqObj1On>n</reqObj1On>
+        <reqObj2On>n</reqObj2On>
+        <reqObj3On>n</reqObj3On>
+        <reqObj4On>n</reqObj4On>
+        <reqObj5On>n</reqObj5On>
+        <reqObj1Worn>n</reqObj1Worn>
+        <reqObj2Worn>n</reqObj2Worn>
+        <reqObj3Worn>n</reqObj3Worn>
+        <reqObj4Worn>n</reqObj4Worn>
+        <reqObj5Worn>n</reqObj5Worn>
+        <!-- 'x' = nothing -->
+        <convPoint1>x</convPoint1>
+        <convPoint2>x</convPoint2>
+        <convPoint3>x</convPoint3>
+        <convPoint4>x</convPoint4>
+        <convPoint5>x</convPoint5>
+        <personMet1>x</personMet1>
+        <personMet2>x</personMet2>
+        <personMet3>x</personMet3>
+        <personMet4>x</personMet4>
+        <personMet5>x</personMet5>
+        <reqPers1Alive>n</reqPers1Alive>
+        <reqPers2Alive>n</reqPers2Alive>
+        <reqPers3Alive>n</reqPers3Alive>
+        <reqPers4Alive>n</reqPers4Alive>
+        <reqPers5Alive>n</reqPers5Alive>
+        <reqPers1Dead>n</reqPers1Dead>
+        <reqPers2Dead>n</reqPers2Dead>
+        <reqPers3Dead>n</reqPers3Dead>
+        <reqPers4Dead>n</reqPers4Dead>
+        <reqPers5Dead>n</reqPers5Dead>
+        
+    </requirement>
+</requirements>

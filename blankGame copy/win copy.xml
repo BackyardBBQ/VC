@@ -1,0 +1,29 @@
+<winningDecision>
+    <goal>
+        <id>1</id>
+        <roomID>19</roomID>
+        <objHeld>1</objHeld>
+        <objRevealed>1</objRevealed>
+        <objBroken>xx</objBroken>
+        <objEaten>xx</objEaten>
+        <cashReq>xx</cashReq>
+        <personAlive>xx</personAlive>
+        <personDead>xx</personDead>
+        <personRevealed>xx</personRevealed>
+        <conversationIDneeded>xx</conversationIDneeded>
+        <convLineReached>xx</convLineReached>
+    </goal>
+</winningDecision>
+
+<!-- things to note:
+    roomID - if dont have to be in a specific room then = 'xx'
+    objHeld - if dont need a specific item then = 'xx
+    objRevealed - id of obj that has to have been made visible
+    objBroken - id of obj that must be broken
+    objEaten - id of obj that must be eaten
+    cashReq - amount of cash needed to win - if n/a then = 'xx'
+    personAlive - id of person who must still be alive at end
+    personDead - id of person who must be dead
+    personRevealed - id of person who must not be hidden
+    conversationIDneeded - id of conv needed to be spoken, xx if n/a
+    convLineReached - line of conv needed to be reached -->

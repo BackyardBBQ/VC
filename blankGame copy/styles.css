@@ -1,0 +1,545 @@
+/* CONTENTS
+1- layouts
+2- tooltips
+3- forms
+*/
+#topBar {
+    position: relative;
+    border-bottom: 0.2em solid black;
+    font-family: cursive;
+    font-size: 2em;
+    color: black;
+    padding: 1%;
+
+}
+
+#topBar2 {
+    position: relative;
+    text-align: right;
+    font-size: 1em;
+    font-family: sans-serif;
+    padding-right: 1%;
+}
+
+#menuBar {
+    position: relative;
+    text-align: left;
+    width: 90%;
+    padding-top: 0.8em;
+    padding-bottom: 0.1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    min-height: 3.1em;
+    border: 0.1em solid steelblue;
+    border-radius: 0.4em;
+    box-sizing: border-box;
+}
+
+#subMenu {
+    position: relative;
+    width: 27%;
+    margin-top: 0em;
+    border: 0.1em solid steelblue;
+    padding-bottom: 3em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+}
+
+.subMenuRow {
+    float: left;
+}
+
+.subMenuRow:hover {
+    background-color: blanchedalmond;
+}
+
+#mainArea {
+    width: 90%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+#largeDisplay {
+    position: relative;
+    width: 72%;
+    text-align: left;
+    margin-top: 0.8em;
+    border: 0.1em solid steelblue;
+    height: auto;
+    padding-left: 1em;
+    padding-bottom: 3em;
+    margin-left: auto;
+    overflow-y: auto;
+    z-index: 0;
+    box-sizing: border-box;
+
+}
+
+#msgArea {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0em;
+    left: 0em;
+    background-color: beige;
+    opacity: 95%;
+    visibility: collapse;
+    display: none;
+
+}
+
+#msgBar {
+    position: absolute;
+    left: 8em;
+    top: 5em;
+    width: 70%;
+    min-height: 1.6em;
+    height: auto;
+    border: 0.1em solid red;
+    border-radius: 0.3em;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 0.1em;
+    z-index: 1;
+    box-sizing: border-box;
+    display: none;
+
+}
+
+#msgBarReveal {
+    position: absolute;
+    left: 8em;
+    top: 5em;
+    width: 70%;
+    max-height: 1.6em;
+    min-height: 1.6em;
+    border: 0.1em solid red;
+    border-radius: 0.3em;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 0.1em;
+    z-index: 1;
+    box-sizing: border-box;
+
+}
+
+
+#menuBar > button {
+    position: relative;
+    left: 0.2em;
+    margin-right: 0.2em;
+}
+
+#menuBar > a {
+    position: relative;
+    left: 0.2em;
+    margin-right: 0.2em;
+    font-size: 1.6em;
+    background-color: darkgray;
+    border: 0.1em solid white;
+    border-radius: 0.3em;
+    color: black;
+    height: auto;
+    min-width: 3em;
+    padding: 0.1em;
+    text-decoration: none;
+    float: left;
+}
+
+#menuBar > a:hover {
+    position: relative;
+    left: 0.2em;
+    margin-right: 0.2em;
+    font-size: 1.6em;
+    background-color: gray;
+    color: white;
+    height: auto;
+    min-width: 3em;
+    padding: 0.1em;
+    text-decoration: none;
+    float: left;
+}
+
+.textSample {
+    position: relative;
+    margin-top: 0.2em;
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    float: left;
+    z-index: 0;
+}
+
+/* TOOLTIP */
+.tooltip {
+    position: relative;
+    /*display: inline-block;
+    border-bottom: 1px dotted black;*/
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 10em;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 2;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* FORMS */
+.frmRow {
+    position: relative;
+    padding-top: 0.5em;
+    margin-top: 0.2em;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    height: auto;
+    float: left;
+    z-index: 0;
+}
+
+.frmRowMenu {
+    position: relative;
+    margin-top: 0.2em;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    height: auto;
+    float: left;
+    z-index: 0;
+}
+
+.frmRow:hover {
+    position: relative;
+    margin-top: 0.2em;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #add9d2;
+    height: auto;
+    float: left;
+    z-index: 0;
+}
+
+.frmCol30T {
+    position: relative;
+    width: 29%;
+    vertical-align: middle;
+    text-align: left;
+    padding-top: 0.3em;
+    font-size-adjust: auto;
+    box-sizing: border-box;
+    height: auto;
+    margin: 0.1em;
+    float: left;
+
+}
+
+.frmCol30 {
+    position: relative;
+    width: 29%;
+    text-align: left;
+    padding-top: 0.2em;
+    padding-left: 0.1em;
+    font-size-adjust: auto;
+    box-sizing: border-box;
+    height: auto;
+    margin: 0.1em;
+    float: left;
+}
+
+.frmCol70 {
+    position: relative;
+    width: 69%;
+    box-sizing: border-box;
+    height: auto;
+    margin: 0.1em;
+    float: left;
+}
+
+.frmCol60 {
+    position: relative;
+    width: 59%;
+    box-sizing: border-box;
+    height: auto;
+    margin: 0.1em;
+    float: left;
+}
+
+.frmCol10 {
+    position: relative;
+    width: 9%;
+    box-sizing: border-box;
+    height: auto;
+    margin: 0.1em;
+    text-align: left;
+    float: left;
+}
+
+.frmEnclosure {
+    visibility: collapse;
+    display: none;
+}
+
+.frmTB {
+    width: 80%;
+}
+
+.frmSub {
+    width: 80%;
+}
+
+.rowHeadline {
+    position: relative;
+    margin-top: 0.2em;
+    padding: 0.2em;
+    width: 98%;
+    box-sizing: border-box;
+    height: auto;
+    font-weight: 100;
+    text-align: center;
+    font-size-adjust: 0.3em;
+    background-color: lemonchiffon;
+    float: left;
+    z-index: 0;
+}
+
+.sectionHeadline {
+    position: relative;
+    margin-top: 0.2em;
+    padding: 0.2em;
+    width: 98%;
+    box-sizing: border-box;
+    height: auto;
+    font-weight: 100;
+    text-align: left;
+    font-size-adjust: 0.3em;
+    background-color: #AFD9E6;
+    float: left;
+    z-index: 0;
+}
+
+.subBtn {
+    width: 80%;
+    padding-left: 8%;
+    box-sizing: border-box;
+}
+
+.subBtn:disabled {
+    color: lightgray;
+    background-color: darkgray;
+    border-color: black;
+}
+
+/* below is the css for a slider checkbox */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* end of slider css */
+
+/* progress bar */
+
+.PreLoad {
+    visibility: collapse;
+    display: none;
+}
+
+.progress {
+    position: relative;
+    height: 12px;
+    display: block;
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+    background-clip: padding-box;
+    /*margin: 0.5rem 0 1rem 0;*/
+    overflow: hidden;
+
+
+}
+
+.progress .indeterminate {
+    background-color: black;
+}
+
+.progress .indeterminate:before {
+
+    position: absolute;
+    background-color: #2C67B1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    will-change: left, right;
+    -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+    animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+}
+
+.progress .indeterminate:after {
+
+    position: absolute;
+    background-color: #2C67B1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    will-change: left, right;
+    -webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+    animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+    -webkit-animation-delay: 1.15s;
+    animation-delay: 1.15s;
+}
+
+@-webkit-keyframes indeterminate {
+    0% {
+        left: -35%;
+        right: 100%;
+    }
+
+    60% {
+        left: 100%;
+        right: -90%;
+    }
+
+    100% {
+        left: 100%;
+        right: -90%;
+    }
+}
+
+@keyframes indeterminate {
+    0% {
+        left: -35%;
+        right: 100%;
+    }
+
+    60% {
+        left: 100%;
+        right: -90%;
+    }
+
+    100% {
+        left: 100%;
+        right: -90%;
+    }
+}
+
+@-webkit-keyframes indeterminate-short {
+    0% {
+        left: -200%;
+        right: 100%;
+    }
+
+    60% {
+        left: 107%;
+        right: -8%;
+    }
+
+    100% {
+        left: 107%;
+        right: -8%;
+    }
+}
+
+@keyframes indeterminate-short {
+    0% {
+        left: -200%;
+        right: 100%;
+    }
+
+    60% {
+        left: 107%;
+        right: -8%;
+    }
+
+    100% {
+        left: 107%;
+        right: -8%;
+    }
+}
+
+/* end of progress bar */

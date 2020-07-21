@@ -1,0 +1,19 @@
+duplicate this folder and name it what you want, for these instructions we will
+call it "myEclipse".
+Using the Terminal application, navigate to the folder using, "cd foldername".
+Then enter "npm init" to initiate the necessary requirements.
+Then enter "npm install electron --save-dev".
+When you are ready, enter "npm start" to run the application for the first time.
+If you close the browser you will need to enter "npm start" in the Terminal
+window again. You can refresh the browser using "cmnd R".
+Once you have tested the nom start once, navigate to the directory in Terminal and type: npm install electron@latest to ensure the latest version.
+
+To package the app for distribution:
+In the Terminal window at your app folder
+ type "npm install electron-packager --save-dev".
+Add "package": "electron-packager .",
+including the ","
+Then enter "npm run package" in the Terminal window.
+You should see a new folder in your project directory that matches
+your current system. Included in that folder is an application
+(or .exe if you are using windows).

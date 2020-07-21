@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<conversations>
+<conversation>
+<id>0</id>
+<onePersonOnly>y</onePersonOnly>
+<forPerson1>1</forPerson1>
+<forPerson2>x</forPerson2>
+<forPerson3>x</forPerson3>
+<forPerson4>x</forPerson4>
+<forPerson5>x</forPerson5>
+<numbLines>2</numbLines>
+<line1>Some text that prompts an answer from the player</line1>
+<line2>Some text that can be a response to the first answer and /or prompt some new answer</line2>
+<line3>x</line3>
+<line4>x</line4>
+<line5>x</line5>
+<line6>x</line6>
+<line7>x</line7>
+<line8>x</line8>
+<line9>x</line9>
+<line10>x</line10>
+<line1Resp>yes</line1Resp>
+<line2Resp>x</line2Resp>
+<line3Resp>x</line3Resp>
+<line4Resp>x</line4Resp>
+<line5Resp>x</line5Resp>
+<line6Resp>x</line6Resp>
+<line7Resp>x</line7Resp>
+<line8Resp>x</line8Resp>
+<line9Resp>x</line9Resp>
+<line10Resp>x</line10Resp>
+<roomOnlyID>x</roomOnlyID>
+<revealObjID>xx</revealObjID>
+<objRevealLine>xx</objRevealLine>
+<help1>Some help that might help the player come up with the correct answer</help1>
+<help2>xx</help2>
+<help3>xx</help3>
+<help4>xx</help4>
+<help5>xx</help5>
+<help6>xx</help6>
+<help7>xx</help7>
+<help8>xx</help8>
+<help9>xx</help9>
+<help10>xx</help10>
+</conversation>
+
+</conversations>

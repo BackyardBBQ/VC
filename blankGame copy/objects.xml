@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<objects>
+<object>
+<id>0</id>
+<name>template</name>
+<description>a template object for the user (you!) to look over</description>
+<weight>1</weight>
+<spaces>1</spaces>
+<specialMess>You pick up the template and turn it over in your hands. The template is an object that works to show you how to add other objects</specialMess>
+<isImportant>y</isImportant>
+<importantMessage>You really can't do that. The template is far too important to your safety</importantMessage>
+<isOn>n</isOn>
+<needsAnotherObjToWork>n</needsAnotherObjToWork>
+<objUsesWith>9999</objUsesWith>
+<multiUse>y</multiUse>
+<hasBeenUsed>n</hasBeenUsed>
+<canBeEaten>n</canBeEaten>
+<eatenObject>xx</eatenObject>
+<isEaten>n</isEaten>
+<eatMess>xx</eatMess>
+<canBeBroken>n</canBeBroken>
+<breakMess>xx</breakMess>
+<brokenObject>xx</brokenObject>
+<isBroken>n</isBroken>
+<originalRoom>9999</originalRoom>
+<isCarried>n</isCarried>
+<isHidden>n</isHidden>
+<hiddenIn>9999</hiddenIn>
+<hiddenUnder>9999</hiddenUnder>
+<hiddenBehind>9999</hiddenBehind>
+<revealNeeds>9999</revealNeeds>
+<revealAction>hit</revealAction>
+<revealRoom>9999</revealRoom>
+<combineable>n</combineable>
+<combineCreates>xx</combineCreates>
+<combineDestroysMe>n</combineDestroysMe>
+<currentRoom>9999</currentRoom>
+<prefix>the</prefix>
+<canGet>y</canGet>
+<actionWhenUsed>light</actionWhenUsed>
+<resultOfUse>A bright beam of light projects from the template and illuminates the world of adVenture Creator</resultOfUse>
+<mendsW>xx</mendsW>
+<examRevealsObjID>xx</examRevealsObjID>
+<itemForSale>n</itemForSale>
+<itemValue>xx</itemValue>
+<sellByID>xx</sellByID>
+<canBeStolen>n</canBeStolen>
+<isTradeable>n</isTradeable>
+<saleMess>xx</saleMess>
+<stealMess>xx</stealMess>
+<isOpen>xx</isOpen>
+<openMess>xx</openMess>
+<openReveals>xx</openReveals>
+<isCash>n</isCash>
+<isLocked>n</isLocked>
+<img>x</img>
+<strength>4</strength>
+<useAffects>xx</useAffects>
+<statEffect>0.1</statEffect>
+<personNeededForReveal>xx</personNeededForReveal>
+</object>
+
+</objects>

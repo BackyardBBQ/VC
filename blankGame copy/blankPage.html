@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home Office</title>
+        <meta name="description" content="Sit down, shut up and get on with it">
+      <link rel="stylesheet" href="main.css">
+<style>
+    /* just for the simple menu displeyed on this page */
+    ul 
+    {
+        display: block;
+        
+    }
+    li
+    {
+     display: block;
+        width: 40%;
+        height: 90px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 15px;
+        background-color: burlywood;
+        color: black;
+        font-family: sans-serif;
+        font-size: 25px;
+        text-align: center;
+        padding-top: 60px;
+        float:left;
+    }
+    li a:any-link{ text-decoration: none;}
+</style>
+    
+</head>
+
+<body>
+    <table style="background-color: #000000; width: 100%; min-height: 300px; text-align: center; color: #ffffff; vertical-align: text-top;">
+    <tr>
+    <td style="vertical-align: top">
+        <div id="header"> 
+   <div w3-include-html="header.html"></div>
+           
+        </div>
+         <div id="main" style="width: 100%; vertical-align: top; float: left">
+   <div id="stats" style="width: 90%; padding-left: 5%; padding-right: 5%; vertical-align: middle; float: left">
+    <div id='money'></div>
+       <div id="rep"></div>
+       <div id="staff"></div>
+       
+    </div>
+           rest of stuff in here  
+             
+             
+             
+        </div>
+        <div id="footer">
+         <div w3-include-foot="footer.html"></div>
+        </div>
+     </td>
+    </tr>
+    </table>
+    
+    <script src="/scr/general.js"></script> 
+    <script src="/scr/variables.js"></script>
+    <script>
+includeHTML();
+includeFooter();
+loadVars();
+  setItems();      
+</script>
+</body>
+</html>

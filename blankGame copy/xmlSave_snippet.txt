@@ -1,0 +1,52 @@
+*** This is how I have manage to get fortm data to save to an xml file.
+*** It has taken me days so do NOT lose this snippet ****
+
+function fromToXml(form){
+    var xmldata=['<?xml version="1.0"?>'];
+      xmldata.push("<boss>");
+      xmldata.push("<person>");
+    var inputs=form.elements;
+    for(var i=0;i<inputs.length;i++){
+      //  var el=document.createElement("USERNAME");
+      if (inputs[i].name=='RmName'){
+        xmldata.push("<username>" + inputs[i].value + "</username>");
+      //  el.setAttribute("name",inputs[i].name);
+        //el.setAttribute("value",inputs[i].value);
+      //  xmldata.push(el.outerHTML);
+      }
+      if (inputs[i].name=="RmDesc"){
+        xmldata.push("<password>" + inputs[i].value + "</password>");
+      }
+
+    }
+    xmldata.push("</person>");
+    xmldata.push("</boss>");
+    return xmldata.join("\n");
+}
+function download(frm){
+
+	var data=fromToXml(frm);
+  console.log(data);
+alert("sss= " + data);
+try {
+  downloadData("text/xml",data,"myGame/bosses1.xml");
+} catch (e) {
+  console.log(e);
+} finally {
+
+}
+
+
+}
+function downloadData(contentType,data,filename){
+
+   var link=document.createElement("A");
+   link.setAttribute("href",encodeURI("data:"+contentType+","+data));
+   link.setAttribute("style","display:none");
+   link.setAttribute("download",filename);
+   document.body.appendChild(link); //needed for firefox
+   link.click();
+   setTimeout(function(){
+    document.body.removeChild(link); //only to remove the temporal link
+   },1000);
+}

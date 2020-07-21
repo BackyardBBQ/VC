@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<people>
+<person>
+<id>0</id>
+<name>Default Person</name>
+<call>Default</call>
+<sex>she</sex>
+<age>24</age>
+<height>200</height>
+<description>is the sort of person who needs a long description which would be here</description>
+<stationaryText>Wasiting to be used</stationaryText>
+<canTalk>y</canTalk>
+<defaultSay>Hmm, I'm quite happy to just stand here looking pretty or maybe I can offer an insight now and then</defaultSay>
+<isFollowing>y</isFollowing>
+<followingText>Default walks behind you flapping his arms like a bird trying to fly</followingText>
+<currRoom>1</currRoom>
+<isHidden>n</isHidden>
+<canFight>n</canFight>
+<fightKills>n</fightKills>
+<fightMessage>A nice description of what happens when this character tries to fight</fightMessage>
+<canResuss>n</canResuss>
+<resussMess>xx</resussMess>
+<killRevealsObjID>xx</killRevealsObjID>
+<isDead>n</isDead>
+<img>x</img>
+<combat>1</combat>
+<weariness>1</weariness>
+<wonders>n</wonders>
+<canChase>n</canChase>
+<chaseGoal>xx</chaseGoal>
+<chaseMsg>xx</chaseMsg>
+<chaseSuccess>xx</chaseSuccess>
+<chaseFail>xx</chaseFail>
+<chaseDraw>xx</chaseDraw>
+<haveChased>n</haveChased>
+<submitItemID>xx</submitItemID>
+<submitText>xx</submitText>
+</person>
+
+</people>
